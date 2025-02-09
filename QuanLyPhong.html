@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Phiếu đặt phòng</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" name="frmPhieuDatPhong" id="frmPhieuDatPhong">
+        <h1>Phiếu đặt phòng</h1>
+        <hr />
+
+        <div class="hoTen">
+          <label for="txtHoTen">Họ tên <span>*</span></label> <br />
+          <input
+            type="text"
+            name="txtHoTen"
+            id="txtHoTen"
+            size="30"
+            autocomplete="off"
+          />
+          <br />
+          <div class="error"></div>
+        </div>
+
+        <div class="diaChi">
+          <label for="txtDiachi">Địa chỉ</label> <br />
+          <input
+            type="text"
+            name="txtDiachi"
+            id="txtDiachi"
+            size="30"
+            autocomplete="off"
+          />
+          <br />
+          <div class="error"></div>
+        </div>
+
+        <div class="cmnd">
+          <label for="txtcmnd">Số chứng minh nhân dân <span>*</span></label>
+          <br />
+          <input
+            type="text"
+            name="txtcmnd"
+            id="txtcmnd"
+            size="30"
+            autocomplete="off"
+          />
+          <br />
+          <div class="error"></div>
+        </div>
+
+        <div class="combo-box">
+          <span>Mức giá</span> <br />
+          <select name="cboMucgia" id="cboMucGia">
+            <option value="a" selected>Loại thường</option>
+            <option value="b">Loại sang trọng</option>
+            <option value="c">Loại đặc biệt</option>
+          </select>
+        </div>
+
+        <div class="date">
+          <div class="subbox">
+            <div class="boxNgayThue">
+              <span>Ngày thuê</span> <br />
+              <input type="date" name="dateNgayThue" id="dateNgayThue" />
+            </div>
+            <div class="boxNgayTra">
+              <span>Ngày trả</span> <br />
+              <input type="date" name="dateNgayTra" id="dateNgayTra" />
+            </div>
+          </div>
+          <div class="error"></div>
+        </div>
+
+        <div class="dichVu">
+          <span> Dịch vụ đi kèm </span> <br />
+          <input type="checkbox" name="chkAnSang" id="chkAnSang" />
+          <span>Ăn sáng</span> <br />
+          <input type="checkbox" name="chkGiatUi" id="chkGiatUi" /><span
+            >Giặt ủi</span
+          ><br />
+          <input type="checkbox" name="chkBaoBuoiSang" id="chkBaoBuoiSang" />
+          <span> Báo buổi sáng </span> <br />
+        </div>
+
+        <div class="thanhTien">
+          <span>Tiền thuê phòng</span> <br />
+          <input type="text" name="txtTienThuePhong" id="txtTienThuePhong" />
+          VNĐ
+        </div>
+
+        <div class="box-btn">
+          <button name="btnTinhDonGia" id="btnTinhDonGia">Tính đơn giá</button>
+          <button type="submit" name="subDangKy" id="subDangKy">Đăng ký</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  height: 100vh;
+}
+
+#frmPhieuDatPhong {
+  width: 500px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+#frmPhieuDatPhong > div {
+  margin-bottom: 5px;
+}
+
+.combo-box,
+.date,
+.dichVu,
+.thanhTien {
+  margin-bottom: 10px !important;
+}
+
+h1 {
+  text-align: center;
+}
+
+label span {
+  color: red;
+}
+
+.date .subbox {
+  display: flex;
+}
+
+.date .boxNgayThue {
+  margin-right: 100px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.error:empty {
+  height: 12px;
+}
